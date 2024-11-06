@@ -115,101 +115,118 @@
         justify-content: center;
         }
         
-        .r_form_wrap{
-        width: 500px;
-        max-width: 100%;
+        .r_form_wrap {
+            width: 500px;
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Added a gradient background */
+            border-radius: 15px; /* Increased border radius for smoother edges */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
         }
         
-        .r_form_wrap .title{
-        padding: 25px;
-        background: var(--white);
-        border-radius: 3px;
-        margin-bottom: 20px;
-        
+        .r_form_wrap .title {
+            padding: 25px;
+            background: var(--white);
+            border-radius: 10px; /* Increased border radius */
+            margin-bottom: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Light shadow for a floating effect */
         }
         
-        .r_form_wrap .title p{
-        font-size: 25px;
-        text-align: center;
-        font-family: myFirstFont;
+        .r_form_wrap .title p {
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Georgia', serif; /* Added a stylish font */
+            color: #333; /* Darker color for better contrast */
+            letter-spacing: 1.5px; /* Adds space between letters */
+            text-transform: uppercase; /* Converts text to uppercase */
         }
         
-        .r_form{
-        padding: 40px;
-        border-radius: 3px;
-        background: var(--tra);
+        .r_form {
+            padding: 40px;
+            border-radius: 10px; /* Increased border radius for a smoother look */
+            background: linear-gradient(135deg, #f9f9f9, #e6e6e6); /* Added a gradient background */
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds an inner shadow for depth */
         }
         
-        .r_form .input_wrap{
-        width: 100%;
-        margin-bottom: 25px;
+        .r_form .input_wrap {
+            width: 100%;
+            margin-bottom: 25px;
         }
         
-        .r_form .input_wrap label{
-        display: block;
-        margin-bottom: 5px;
+        .r_form .input_wrap label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold; /* Makes the label text bold */
+            color: #555; /* Darker color for better readability */
         }
         
-        .r_form .input_wrap .input_item{
-        position: relative;
-        width: 100%;
+        .r_form .input_wrap .input_item {
+            position: relative;
+            width: 100%;
         }
         
-        .r_form .input_wrap .input_item .input{
-        width: 100%;
-        border-radius: 3px;
-        height: 40px;
-        border: 2px solid var(--input-bg);
-        background: var(--input-bg);
-        padding: 10px 20px;
-        padding-left: 50px;
-        transition: 0.5s ease;
-        color: var(--secondary);
-        border-color: var(--bordcolor);
+        .r_form .input_wrap .input_item .input {
+            width: 100%;
+            border-radius: 5px; /* Increased border radius */
+            height: 40px;
+            border: 2px solid #ddd; /* Soft border color */
+            background: #f5f5f5; /* Light background color */
+            padding: 10px 20px;
+            padding-left: 50px;
+            transition: 0.5s ease;
+            color: #333; /* Darker color for better readability */
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds an inner shadow for depth */
         }
         
-        .r_form .input_wrap .input_item .input:focus{
-        border-color: var(--primary);
+        .r_form .input_wrap .input_item .input:focus {
+            border-color: #42a5f5; /* Changes border color on focus */
+            box-shadow: 0 0 10px rgba(66, 165, 245, 0.5); /* Adds glow effect on focus */
         }
-
-        .button{
+        
+        .button {
             width: 100%;
             border: 0;
-            background: var(--primary);
-            padding: 10px;
-            border-radius: 3px;
-            height: 40px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary)); /* Gradient background for interest */
+            padding: 15px; /* Increased padding for a more substantial feel */
+            border-radius: 50px; /* Changed to a pill shape */
+            height: 50px; /* Slightly increased height */
             color: var(--white);
             cursor: pointer;
-            transition: 0.5s ease;
-            }
-            
-            .button:hover{
+            transition: all 0.3s ease; /* Smooth transition for all properties */
+            font-size: 16px; /* Increased font size */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+        }
+        
+        .button:hover {
             border-color: var(--btn-hvr);
-            background: var(--btn-hvr);
-            }
-
-        #uid_detail{
+            background: var(--btn-hvr); /* Consistent hover color */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+            transform: translateY(-3px); /* Slight lift effect on hover */
+        }
+        
+        #uid_detail {
             color: #7c7c81;
             font-size: 12px;
             padding: 3.5px 0px;
+            font-style: italic; /* Added italic for a distinct look */
         }
-    
-        .r_form .input_wrap .input_item .icon{
+        
+        .r_form .input_wrap .input_item .icon, 
+        #icon {
             position: absolute;
             top: 12px;
             left: 20px;
-            color: var(--secondary);
-            font-size: 16px;
-            }
-            #icon{
-            position: absolute;
-            top: 12px;
-            left: 20px;
-            color: var(--secondary);
-            font-size: 16px;
-            }
-        .none_div{
+            color: #FF6347; /* Changed color to a vibrant tomato */
+            font-size: 18px; /* Slightly increased font size */
+            transition: color 0.3s ease; /* Smooth transition effect */
+        }
+        
+        .r_form .input_wrap .input_item .icon:hover, 
+        #icon:hover {
+            color: #00BFFF; /* Changes color on hover to neon blue */
+        }
+                .none_div{
             height: 100px;
         }
         #header_fees{
@@ -262,4 +279,4 @@
         height: 40px;
         width: 100%;
         overflow: hidden;
-    } 
+    } }

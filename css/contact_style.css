@@ -148,131 +148,155 @@ display: flex;
 justify-content: center;
 }
 
-.r_form_wrap{
-width: 500px;
-max-width: 100%;
+.r_form_wrap {
+   width: 500px;
+   max-width: 100%;
+   margin: auto;
+   padding: 20px;
+   background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Gradient background for elegance */
+   border-radius: 15px; /* Rounded corners for a modern look */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.r_form_wrap .title{
-padding: 25px;
-background: var(--white);
-border-radius: 3px;
-margin-bottom: 20px;
-
+.r_form_wrap .title {
+   padding: 25px;
+   background: var(--white);
+   border-radius: 10px; /* Increased border radius */
+   margin-bottom: 20px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Light shadow for a floating effect */
 }
 
-.r_form_wrap .title p{
-font-size: 25px;
-text-align: center;
-font-family: bold;
+.r_form_wrap .title p {
+   font-size: 25px;
+   text-align: center;
+   font-family: 'Arial Black', sans-serif; /* Bold, modern font */
+   color: #333; /* Dark color for contrast */
+   letter-spacing: 1.5px; /* Adds space between letters */
+   text-transform: uppercase; /* Converts text to uppercase */
 }
 
-.r_form{
-padding: 40px;
-border-radius: 3px;
-background: var(--tra);
+.r_form {
+   padding: 40px;
+   border-radius: 10px; /* Increased border radius for a smoother look */
+   background: linear-gradient(135deg, #f9f9f9, #e6e6e6); /* Gradient background */
+   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds an inner shadow for depth */
 }
 
-.r_form .input_wrap{
-width: 100%;
-margin-bottom: 25px;
+.r_form .input_wrap {
+   width: 100%;
+   margin-bottom: 25px;
 }
 
-.r_form .input_wrap label{
-display: block;
-margin-bottom: 5px;
+.r_form .input_wrap label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold; /* Makes the label text bold */
+   color: #555; /* Darker color for better readability */
 }
 
-.r_form .input_wrap .input_item{
-position: relative;
-width: 100%;
+.r_form .input_wrap .input_item {
+   position: relative;
+   width: 100%;
 }
 
-.r_form .input_wrap .input_item .input{
-width: 100%;
-border-radius: 3px;
-height: 40px;
-border: 2px solid var(--input-bg);
-background: var(--input-bg);
-padding: 10px 20px;
-padding-left: 50px;
-transition: 0.5s ease;
-color: var(--secondary);
-border-color: var(--bordcolor);
+.r_form .input_wrap .input_item .input {
+   width: 100%;
+   border-radius: 5px; /* Increased border radius */
+   height: 40px;
+   border: 2px solid #ddd; /* Soft border color */
+   background: #f5f5f5; /* Light background color */
+   padding: 10px 20px;
+   padding-left: 50px;
+   transition: 0.5s ease;
+   color: #333; /* Darker color for better readability */
+   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds an inner shadow for depth */
 }
 
-.r_form .input_wrap .input_item .input:focus{
-border-color: var(--primary);
+.r_form .input_wrap .input_item .input:focus {
+   border-color: #42a5f5; /* Changes border color on focus */
+   box-shadow: 0 0 10px rgba(66, 165, 245, 0.5); /* Adds glow effect on focus */
 }
 
-.r_form .input_wrap .input_item .icon{
-position: absolute;
-top: 12px;
-left: 20px;
-color: var(--secondary);
-font-size: 16px;
-}
-#icon{
-position: absolute;
-top: 12px;
-left: 20px;
-color: var(--secondary);
-font-size: 16px;
-}
-.mess{
-width: 100%;
-border-radius: 3px;
-height: 250px;
-border: 2px solid var(--input-bg);
-background: var(--input-bg);
-padding: 10px 20px;
-padding-left: 50px;
-transition: 0.5s ease;
-color: var(--secondary);
-border-color: var(--bordcolor);
-}
-.mess:focus{
-   border-color: var(--primary);
-}
-.button{
-width: 100%;
-border: 0;
-background: var(--primary);
-padding: 10px;
-border-radius: 3px;
-height: 40px;
-color: var(--white);
-cursor: pointer;
-transition: 0.5s ease;
+.r_form .input_wrap .input_item .icon, 
+#icon {
+   position: absolute;
+   top: 12px;
+   left: 20px;
+   color: #00BFFF; /* Changed to neon blue */
+   font-size: 18px; /* Slightly increased font size */
+   transition: color 0.3s ease; /* Smooth transition effect */
 }
 
-.button:hover{
-border-color: var(--btn-hvr);
+.r_form .input_wrap .input_item .icon:hover, 
+#icon:hover {
+   color: #FF4500; /* Changes color on hover to vibrant orange */
 }
 
-.clear_ad{
+.mess {
+   width: 100%;
+   border-radius: 5px; /* Increased border radius */
+   height: 250px;
+   border: 2px solid #ddd; /* Soft border color */
+   background: #f5f5f5; /* Light background color */
+   padding: 10px 20px;
+   padding-left: 50px;
+   transition: 0.5s ease;
+   color: #333; /* Darker color for better readability */
+   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds an inner shadow for depth */
+}
+
+.mess:focus {
+   border-color: #42a5f5; /* Changes border color on focus */
+}
+
+.button {
+   width: 100%;
+   border: 0;
+   background: linear-gradient(90deg, var(--primary), var(--secondary)); /* Gradient background */
+   padding: 15px; /* Increased padding */
+   border-radius: 25px; /* Changed to pill shape */
+   height: 50px; /* Increased height */
+   color: var(--white);
+   cursor: pointer;
+   transition: all 0.3s ease; /* Smooth transition */
+   font-size: 16px; /* Increased font size */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.button:hover {
+   border-color: var(--btn-hvr);
+   background: var(--btn-hvr); /* Consistent hover color */
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+   transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.clear_ad {
    margin-top: 10px;
- width: 100%;
- border: 0;
- background: var(--btn-hvr);
- padding: 10px;
- border-radius: 3px;
- height: 40px;
- color: var(--white);
- cursor: pointer;
- transition: 0.5s ease;
- }
- 
-   .clear_ad:hover{
- background: var(--primary);
- }
-/* Align items to center of the 'div' with the class 'center' */
+   width: 100%;
+   border: 0;
+   background: var(--btn-hvr);
+   padding: 10px;
+   border-radius: 10px; /* Increased border radius */
+   height: 50px; /* Increased height */
+   color: var(--white);
+   cursor: pointer;
+   transition: all 0.3s ease; /* Smooth transition */
+}
+
+.clear_ad:hover {
+   background: var(--primary);
+}
+
 .center {
    text-align: center;
 }
-.none_div{
-    height: 100px;
-    width: 100px;
+
+.none_div {
+   height: 100px;
+   width: 100px;
+   background: #e0e0e0; /* Added background color */
+   border-radius: 10px; /* Rounded corners */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 
 @media (max-width: 700px) {
@@ -320,4 +344,4 @@ border-color: var(--btn-hvr);
    .c_from{
        margin-top: 15px;
    }
-   
+}

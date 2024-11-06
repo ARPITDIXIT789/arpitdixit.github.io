@@ -137,137 +137,177 @@ display: flex;
 justify-content: center;
 }
 
-.r_form_wrap{
-width: 500px;
-max-width: 100%;
+.r_form_wrap {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background for a stylish look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+  border-radius: 15px; /* More pronounced rounded corners */
 }
 
-.r_form_wrap .title{
-padding: 25px;
-background: var(--white);
-border-radius: 3px;
-margin-bottom: 20px;
-
+.r_form_wrap .title {
+  padding: 25px;
+  background: var(--white);
+  border-radius: 10px; /* Increased border radius for smoother edges */
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Light shadow for a floating effect */
 }
 
-.r_form_wrap .title p{
-font-size: 25px;
-text-align: center;
-font-family: bold;
+.r_form_wrap .title p {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Arial Black', sans-serif; /* Bold, modern font */
+  color: #333; /* Dark gray color for better contrast */
+  letter-spacing: 1.5px; /* Adds space between letters */
+  text-transform: uppercase; /* Converts text to uppercase */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adds subtle text shadow */
 }
 
-.r_form{
-padding: 40px;
-border-radius: 3px;
-background: var(--tra);
+.r_form {
+  padding: 40px;
+  border-radius: 10px; /* Increased border radius for smoother edges */
+  background: linear-gradient(135deg, #e3f2fd, #90caf9); /* Added a gradient background */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Adds a transition for hover effect */
 }
 
-.r_form .input_wrap{
-width: 100%;
-margin-bottom: 25px;
+.r_form:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
 }
 
-.r_form .input_wrap label{
-display: block;
-margin-bottom: 5px;
+.r_form .input_wrap {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
-.r_form .input_wrap .input_item{
-position: relative;
-width: 100%;
+.r_form .input_wrap label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Makes the label text bold */
+  color: #333; /* Darker color for better readability */
 }
 
-.r_form .input_wrap .input_item .input{
-width: 100%;
-border-radius: 3px;
-height: 40px;
-border: 2px solid var(--input-bg);
-background: var(--input-bg);
-padding: 10px 20px;
-padding-left: 50px;
-transition: 0.5s ease;
-color: var(--secondary);
-border-color: var(--bordcolor);
+.r_form .input_wrap .input_item {
+  position: relative;
+  width: 100%;
+}
+
+.r_form .input_wrap .input_item .input {
+  width: 100%;
+  border-radius: 5px; /* Increased border radius for a smoother look */
+  height: 40px;
+  border: 2px solid #90caf9; /* Light blue border */
+  background: #f5f5f5; /* Light background color */
+  padding: 10px 20px;
+  padding-left: 50px;
+  transition: 0.5s ease;
+  color: #333; /* Darker color for better readability */
+  border-color: #90caf9; /* Light blue border color */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds an inner shadow for depth */
+}
+
+.r_form .input_wrap .input_item .input:focus {
+  border-color: #42a5f5; /* Changes border color on focus */
+  box-shadow: 0 0 10px rgba(66, 165, 245, 0.5); /* Adds glow effect on focus */
 }
 
 .r_form .input_wrap .input_item .input:focus{
 border-color: var(--primary);
 }
 
-.r_form .input_wrap .input_item .icon{
-position: absolute;
-top: 12px;
-left: 20px;
-color: var(--secondary);
-font-size: 16px;
-}
-#icon{
-position: absolute;
-top: 12px;
-left: 20px;
-color: var(--secondary);
-font-size: 16px;
+.r_form .input_wrap .input_item .icon, 
+#icon {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    color: #00BFFF; /* Changed color to a vibrant blue */
+    font-size: 18px; /* Slightly increased font size */
+    transition: color 0.3s ease; /* Smooth transition effect */
 }
 
-.r_form .input_wrap .input_radio{
-display: flex;
+.r_form .input_wrap .input_item .icon:hover, 
+#icon:hover {
+    color: #FF4500; /* Changes color on hover to orange */
 }
 
-.r_form .input_wrap .input_radio .input_radio_item{
-background: var(--input-bg);
-margin-right: 25px;
-padding: 20px;
-border-radius: 3px;
-position: relative;
-width: 100px;
+.r_form .input_wrap .input_radio {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of radio items */
+    justify-content: space-around; /* Distributes items evenly */
 }
 
-.r_form .input_wrap .input_radio .input_radio_item .radio_mark{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--secondary);
-border: 2px solid transparent;
-border-radius: 3px;
-margin: 0;
-cursor: pointer;
-transition: 0.5s ease;
+.r_form .input_wrap .input_radio .input_radio_item {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    margin-bottom: 15px; /* Added margin for better spacing */
+    padding: 20px;
+    border-radius: 10px; /* Increased border radius */
+    position: relative;
+    width: calc(33.33% - 20px); /* Responsive width */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
-.r_form .input_wrap .input_radio .input_radio_item .radio_mark .i{
-margin-right: 5px;
-display: inline-block;
+.r_form .input_wrap .input_radio .input_radio_item:hover {
+    background: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
 }
 
-.r_form .input_wrap .input_radio .input_radio_item .radio{
-position: absolute;
-top: 0;
-left: 0;
-opacity: 0;
+.r_form .input_wrap .input_radio .input_radio_item .radio_mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00BFFF; /* Consistent color with icon */
+    border: 2px solid transparent;
+    border-radius: 10px; /* Matches the item’s border radius */
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.r_form .input_wrap .input_radio .input_radio_item .radio:checked ~ .radio_mark{
-color: var(--primary);
-border-color: var(--primary);
+.r_form .input_wrap .input_radio .input_radio_item .radio_mark:hover {
+    border-color: #FF4500; /* Changes border color on hover */
+    color: #FF4500; /* Changes text color on hover */
 }
 
-.button{
-width: 100%;
-border: 0;
-background: var(--primary);
-padding: 10px;
-border-radius: 3px;
-height: 40px;
-color: var(--white);
-cursor: pointer;
-transition: 0.5s ease;
+.r_form .input_wrap .input_radio .input_radio_item .radio_mark .i {
+    margin-right: 5px;
+    display: inline-block;
 }
 
+.r_form .input_wrap .input_radio .input_radio_item .radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio:checked ~ .radio_mark {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: rgba(0, 0, 0, 0.1); /* Adds a subtle background on selection */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transform: scale(1.05); /* Slightly enlarges the checked item */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+.button {
+    width: 100%;
+    border: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary)); /* Gradient background for visual interest */
+    padding: 10px;
+    border-radius: 25px; /* Changed to a pill shape for a modern look */
+    height: 50px; /* Slightly increased height */
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    font-size: 16px; /* Increased font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 .button:hover{
 background: var(--btn-hvr);
 }
