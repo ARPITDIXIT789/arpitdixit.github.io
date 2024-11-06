@@ -45,9 +45,9 @@ body{
     }
 
 .header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(../image/background.jpg);
+    min-height: 80vh;
+    width: 110%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -83,7 +83,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #ff0000;
+    background: #00ff2a;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -102,34 +102,64 @@ nav img{
     transform: translate(-50%,50%);
     text-align: center;
 }
-.text-box h1{
+.text-box h1 {
     font-size: 62px;
     font-weight: bold;
-
+    color: #ffffff; /* Tomato color for a vibrant look */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 3px; /* Add space between letters */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    font-family: 'Arial Black', sans-serif; /* Bold, modern font */
+    background: linear-gradient(to right, #c5b7ad, #e9dcda); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    color: transparent; /* Make text itself transparent to show gradient */
+    animation: textGlow 1.5s ease-in-out infinite alternate; /* Text glow animation */
 }
-.text-box p{
+
+@keyframes textGlow {
+    from {
+        text-shadow: 2px 2px 4px rgba(15, 246, 219, 0.5), 0 0 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+    to {
+        text-shadow: 2px 2px 4px rgba(18, 231, 238, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.text-box p {
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
-    
+    font-family: 'Georgia', serif; /* Adds a classic font */
+    line-height: 1.6; /* Improves readability */
+    text-align: justify; /* Justifies the text */
+    background: rgba(0, 0, 0, 0.5); /* Adds a translucent background */
+    padding: 10px 15px; /* Adds padding for better spacing */
+    border-left: 5px solid #47daff; /* Adds a left border for visual interest */
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
-.hero-btn{
+
+.hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: yellow;
-    border: 2px solid rgb(11, 245, 218);
+    color: #000000; /* Changed to hex for consistency */
+    border: 2px solid #0BF5DA; /* Simplified color notation */
     padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
+    font-size: 14px; /* Slightly increased font size */
+    background: linear-gradient(45deg, #0A8BEE, #0BF5DA); /* Added a gradient background */
     position: relative;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50px; /* Changed to a pill shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
 }
-.hero-btn:hover{
-    color: black;
-    border: 2px solid yellow;
-    background:yellow;
-    transition: 0.5s;
+
+.hero-btn:hover {
+    color: white; /* Changed to white for better contrast */
+    border: 2px solid #00FFC3; /* Consistent hover color */
+    background: #3f3d8b; /* Darker blue for hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 .icon{
@@ -138,22 +168,35 @@ nav img{
 
 /* Course */
 
- .course{
+.course {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background for a soft look */
+    border-radius: 15px; /* Rounded corners for a modern feel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-h1{
-    font-size: 36px;
+
+h1 {
+    font-size: 40px;
     font-weight: 300;
+    color: #3a3a3a; /* Dark gray for better contrast */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 1.5px; /* Adds space between letters */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    margin-bottom: 20px; /* Adds space below the heading */
 }
-p{
-    color:#525050;
-    font-size: 14px;
+
+p {
+    color: #525050;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+    line-height: 1.8; /* Improved readability */
+    padding: 20px; /* More padding for better spacing */
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Light shadow for a floating effect */
 }
 .row{
     margin-top: 5%;
@@ -301,18 +344,32 @@ h3{
 
 /* Footer */
 
-.footer{
+.footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
     margin-top: -50px;
+    background: linear-gradient(90deg, #00dbfd, #fcfc16); /* Gradient background */
+    color: #fff; /* White text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-top: 2px solid #eee; /* Top border for visual separation */
+    font-family: 'Arial', sans-serif; /* Modern font */
 }
 
-.footer h4{
-    margin-bottom: 25px;
+
+.footer h4 {
+    margin-bottom: 15px;
     margin-top: 20px;
-    font-weight: 600;
-} 
+    font-weight: 900; /* Ensures the text is very bold */
+    color: #fff; /* White text color */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    background-color: #333; /* Dark background color */
+    padding: 10px; /* Adds padding around the text */
+    border-radius: 5px; /* Rounds the corners */
+    text-align: center; /* Centers the text */
+}
+
 
 /* Media query for responsive */
 
@@ -332,14 +389,14 @@ h3{
        font-weight: bold;
     }
     .text-box p{
-        font-size: 12px;
+        font-size: 13px;
     }
     .nav-links ul li{
         display: block;
     }
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: #f50ace;
         height: 100vh;
         width: 200px;
         top: 0%;
